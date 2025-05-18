@@ -1,0 +1,141 @@
+/* Reset y configuración global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #0c1a34;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #0078d7;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #005a9e;
+    transform: scale(1.05);
+}
+
+/* Secciones */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #ffd700;
+}
+
+section p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+section img, section video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Botones o enlaces dentro de secciones */
+section a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+section a:hover {
+    background-color: #0088cc;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0c1a34;
+    text-align: center;
+    padding: 20px;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Media Queries - Adaptabilidad para móviles */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar a {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
